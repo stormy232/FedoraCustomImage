@@ -21,14 +21,9 @@ dnf5 install -y \
 
 systemctl enable docker.service
 
-dnf5 install -y \
-  tmux \ 
-  niri \ 
-  rofi \
-  xwayland-satellite \
-  waybar \
-  neovim 
+dnf5 install -y tmux niri rofi xwayland-satellite waybar neovim 
 
+#
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
