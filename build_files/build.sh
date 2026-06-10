@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 
-dnf5 config-manager addrepo --from-repofile=https://docker.com
+dnf5 config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
 dnf5 install -y \
     docker-ce \
     docker-ce-cli \
