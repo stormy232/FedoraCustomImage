@@ -10,7 +10,23 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+
+dnf5 config-manager addrepo --from-repofile=https://docker.com
+dnf5 install -y \
+    docker-ce \
+    docker-ce-cli \
+    containerd.io \
+    docker-buildx-plugin \
+    docker-compose-plugin
+
+systemctl enable docker.service
+
+dnf5 install -y tmux \ 
+  niri \ 
+  rofi \
+  xwayland-sattelite \
+  waybar \
+  neovim \
 
 # Use a COPR Example:
 #
