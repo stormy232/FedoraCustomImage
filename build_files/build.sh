@@ -21,7 +21,8 @@ dnf5 install -y \
 
 systemctl enable docker.service
 
-dnf5 install -y tmux \ 
+dnf5 install -y \
+  tmux \ 
   niri \ 
   rofi \
   xwayland-sattelite \
