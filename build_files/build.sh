@@ -25,7 +25,7 @@ dnf5 install -y \
   tmux \ 
   niri \ 
   rofi \
-  xwayland-sattelite \
+  xwayland-satellite \
   waybar \
   neovim 
 
