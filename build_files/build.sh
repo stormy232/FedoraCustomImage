@@ -27,7 +27,7 @@ dnf5 install -y \
   rofi \
   xwayland-sattelite \
   waybar \
-  neovim \
+  neovim 
 
 # Use a COPR Example:
 #
